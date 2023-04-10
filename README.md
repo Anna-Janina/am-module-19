@@ -6,7 +6,6 @@
 -
 - [Project Description](#project-description)
 - [How to Run](#how-to-run)
-- [Technologies used](#technologies-used)
 - [User Story](#user-story)
 - [Acceptance Criteria](#acceptance-criteria)
 - [License](#license)
@@ -14,47 +13,56 @@
 
 **Project Description**
 -
-A social media network application to create, update and delete your thoughts.
+A text editor web application which can be downloaded and used without internet connection.
 
-
-https://drive.google.com/file/d/1QEBbY-EfkfGWTT8ca2lDicFvMpJSnqNp/view
 
 **How to Run**
 -
-1. Clone the Repository on to your machine.
-2. Open the terminal and ensure you are in the right file path.
-3. Run the command npm install to download the packages.
-4. Then run the command node start to run the software.
-5. The application will then begin to run locally. -->
-
-
-**Technologies used:**
--
-- Node.js
-- MongoDB
-- Mongoose
-- Express
-- Moment
+1. This application will use the following npm packages:
+    - npm install express 
+    - npm install --save-dev webpack 
+    - npm install webpack-dev-server --save-dev 
+    - npm install --save-dev webpack-pwa-manifest 
+    - npm install babel (Babel)
+    - npm install --save-dev css-loader 
+    - npm install concurrently --save 
+    - npm npm install idb
 
 
 **User Story**
 -
-- AS A social media startup
-- I WANT an API for my social network that uses a NoSQL database
-- SO THAT my website can handle large amounts of unstructured data
+- AS A developer
+- I WANT to create notes or code snippets with or without an internet connection
+- SO THAT I can reliably retrieve them for later use
 
 
 **Acceptance Criteria**
 -
-- GIVEN a social network API
-- WHEN I enter the command to invoke the application
-- THEN my server is started and the Mongoose models are synced to the MongoDB database
-- WHEN I open API GET routes in Insomnia for users and thoughts
-- THEN the data for each of these routes is displayed in a formatted JSON
-- WHEN I test API POST, PUT, and DELETE routes in Insomnia
-- THEN I am able to successfully create, update, and delete users and thoughts in my database
-- WHEN I test API POST and DELETE routes in Insomnia
-- THEN I am able to successfully create and delete reactions to thoughts and add and remove friends to a user’s friend list
+- GIVEN a text editor web application
+- WHEN I open my application in my editor
+- THEN I should see a client server folder structure
+- WHEN I run `npm run start` from the root directory
+- THEN I find that my application should start up the backend and serve the client
+- WHEN I run the text editor application from my terminal
+- THEN I find that my JavaScript files have been bundled using webpack
+- WHEN I run my webpack plugins
+- THEN I find that I have a generated HTML file, service worker, and a manifest file
+- WHEN I use next-gen JavaScript in my application
+- THEN I find that the text editor still functions in the browser without errors
+- WHEN I open the text editor
+- THEN I find that IndexedDB has immediately created a database storage
+- WHEN I enter content and subsequently click off of the DOM window
+- THEN I find that the content in the text editor has been saved with IndexedDB
+- WHEN I reopen the text editor after closing it
+- THEN I find that the content in the text editor has been retrieved from our IndexedDB
+- WHEN I click on the Install button
+- THEN I download my web application as an icon on my desktop
+- WHEN I load my web application
+- THEN I should have a registered service worker using workbox
+- WHEN I register a service worker
+- THEN I should have my static assets pre cached upon loading along with subsequent pages and static assets
+- WHEN I deploy to Heroku
+- THEN I should have proper build scripts for a webpack application
 
 
 **License**
