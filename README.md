@@ -16,6 +16,10 @@
 A text editor web application which can be downloaded and used without internet connection.
 
 
+![alt text](Assets/Screenshot%202023-04-10%20at%2020.34.17.png) 
+
+
+
 **How to Run**
 -
 1. This application will use the following npm packages:
